@@ -1,7 +1,5 @@
 import tensorflow as tf
 import numpy as np
-import yaml
-
 
 print('TensorFlow version:', tf.__version__)
 
