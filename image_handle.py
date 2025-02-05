@@ -17,7 +17,7 @@ def pad(imagePath):
     padded = ImageOps.expand(image, padding, 0)
     return padded
 
-def resize(image, size = (500, 500)):
+def resize(image, size = (512, 512)):
     resizedImage = image.resize(size)
     return resizedImage
 
@@ -40,5 +40,5 @@ def process_image(inputFolder, outputFolder):
     print("done")
             
 
-process_image('datasets/brain_tumor/train/images', 'datasets/resized/train/images')
-process_image('datasets/brain_tumor/valid/images', 'datasets/resized/valid/images')
+process_image('datasets/old/train/images', 'datasets/brain_tumour/train/images')
+process_image('datasets/old/valid/images', 'datasets/brain_tumour/valid/images')
